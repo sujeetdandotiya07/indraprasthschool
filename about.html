@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Indraprasth Public School - Behind LIC Office, Gohad Chauraha</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        darkBg: '#090d16',
+                        cardBg: '#111827',
+                        surfaceBg: '#161f33',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-200 font-sans selection:bg-brand-500 selection:text-white antialiased">
+
+    <div class="bg-gradient-to-r from-sky-950 via-slate-900 to-indigo-950 text-xs py-2.5 px-4 border-b border-sky-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                <span class="inline-flex items-center gap-1.5 text-sky-300">
+                    <i class="fa-solid fa-bullhorn text-brand-400 animate-pulse"></i> 
+                    Admissions Open for Session 2026-27 (Nursery to 8th)
+                </span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-brand-400"></i> Behind LIC Office, Gohad Chauraha
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+919926754849" class="text-slate-300 hover:text-white flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-phone text-brand-400"></i> +91 9926754849
+                </a>
+                <span class="text-slate-700">|</span>
+                <a href="#portal-login" class="text-brand-400 hover:text-white flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-user-graduate"></i> Student Portal
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-[#0a0f1d]/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500 to-blue-700 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 text-2xl font-black group-hover:scale-105 transition transform">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div>
+                        <div class="text-xl sm:text-2xl font-black tracking-wider text-white">INDRAPRASTH <span class="text-brand-400">PUBLIC SCHOOL</span></div>
+                        <p class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">Behind LIC Office, Gohad Chauraha</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+                    <a href="index.html" class="text-slate-300 hover:text-brand-400 transition duration-200">Home</a>
+                    <a href="about.html" class="text-brand-400 font-semibold border-b-2 border-brand-400 pb-1">About Us</a>
+                    <a href="academics.html" class="text-slate-300 hover:text-brand-400 transition duration-200">Academics</a>
+                    <a href="index.html#facilities" class="text-slate-300 hover:text-brand-400 transition duration-200">Facilities</a>
+                    <a href="index.html#faculty" class="text-slate-300 hover:text-brand-400 transition duration-200">Faculty</a>
+                    <a href="index.html#contact" class="text-slate-300 hover:text-brand-400 transition duration-200">Contact</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="#admission-cta" class="bg-gradient-to-r from-brand-500 to-blue-600 hover:from-brand-400 hover:to-blue-500 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-brand-500/25 transition duration-300 transform hover:-translate-y-0.5">
+                        Apply Admission
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden text-slate-300 hover:text-white text-2xl focus:outline-none p-2">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-5 space-y-4">
+            <a href="index.html" class="block text-slate-300 hover:text-white py-1">Home</a>
+            <a href="about.html" class="block text-brand-400 font-semibold py-1">About Us</a>
+            <a href="academics.html" class="block text-slate-300 hover:text-white py-1">Academics</a>
+            <a href="index.html#facilities" class="block text-slate-300 hover:text-white py-1">Facilities</a>
+            <a href="index.html#faculty" class="block text-slate-300 hover:text-white py-1">Faculty</a>
+            <a href="index.html#contact" class="block text-slate-300 hover:text-white py-1">Contact</a>
+            <a href="#admission-cta" class="block text-center bg-brand-500 hover:bg-brand-600 text-white py-2.5 rounded-lg font-medium mt-3">Apply Admission</a>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden pt-12 pb-20 lg:py-24 border-b border-slate-800/80">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-950/40 via-darkBg to-darkBg"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumbs -->
+            <div class="flex items-center justify-center lg:justify-start gap-2 text-xs font-medium text-slate-400 mb-6">
+                <a href="index.html" class="hover:text-brand-400 transition">Home</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i>
+                <span class="text-brand-400">About Us</span>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Header -->
+                <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-graduation-cap text-brand-400"></i> Shaping Future Pioneers
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Fostering Character, Intellect &amp; <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-brand-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">Digital Innovation.</span>
+                    </h1>
+                    <p class="text-slate-400 text-base sm:text-lg max-w-3xl leading-relaxed">
+                        Indraprasth Public School, centrally situated Behind the LIC Office at Gohad Chauraha, is dedicated to delivering an inspiring, disciplined, and technologically enhanced education that prepares students for global challenges and lifelong success.
+                    </p>
+                </div>
+
+                <!-- Key Stat Overview Card -->
+                <div class="lg:col-span-4">
+                    <div class="bg-cardBg/90 border border-slate-800 p-6 rounded-2xl shadow-xl shadow-sky-950/20 backdrop-blur-md">
+                        <div class="flex items-center gap-3 mb-4 pb-4 border-b border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Center for Excellence</h4>
+                                <p class="text-xs text-slate-400">Gohad Chauraha, M.P.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="p-3 bg-surfaceBg/60 rounded-xl border border-slate-800/80">
+                                <div class="text-2xl font-extrabold text-brand-400">100%</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Board Pass Rate</div>
+                            </div>
+                            <div class="p-3 bg-surfaceBg/60 rounded-xl border border-slate-800/80">
+                                <div class="text-2xl font-extrabold text-white">25:1</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Student-Teacher</div>
+                            </div>
+                            <div class="p-3 bg-surfaceBg/60 rounded-xl border border-slate-800/80">
+                                <div class="text-2xl font-extrabold text-white">15+</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Sports &amp; Clubs</div>
+                            </div>
+                            <div class="p-3 bg-surfaceBg/60 rounded-xl border border-slate-800/80">
+                                <div class="text-2xl font-extrabold text-emerald-400">Smart</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Digital Campus</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="py-20 bg-surfaceBg/20 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Visual Image Stack -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative mx-auto rounded-3xl overflow-hidden border border-slate-800 shadow-2xl bg-cardBg p-3">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80" alt="Students in Classroom" class="rounded-2xl w-full h-[400px] object-cover">
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-darkBg/95 backdrop-blur-md border border-slate-700/80 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-bold text-xs sm:text-sm">Convenient Campus Location</div>
+                                    <div class="text-[11px] text-slate-400">Behind LIC Office, Gohad Chauraha</div>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-brand-500/20 text-brand-400 border border-brand-500/30 text-[11px] rounded-full font-semibold">
+                                Accessible
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Text -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-400 font-semibold tracking-wider uppercase text-xs">Our Story &amp; Foundation</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-snug">
+                        Transforming Schooling into an Inspiring Journey of <span class="text-brand-400">Discovery.</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Indraprasth Public School was founded with a definitive vision: to bring world-class educational standards, modern pedagogical techniques, and digital literacy to students in Gohad and neighboring regions.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Located Behind the LIC Office at the bustling Gohad Chauraha, our institution bridges the gap between conventional moral grounding and modern technological expectations. From kindergarten exploration to advanced secondary board and competitive exam preparations (JEE, NEET, CUET), our structured educational path ensures students develop deep analytical thinking and strong ethical values.
+                    </p>
+                    
+                    <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-cardBg border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-brain text-brand-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Critical Thinking</h4>
+                                <p class="text-slate-400 text-xs mt-1">Concept-based understanding instead of rote memorization.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-cardBg border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-seedling text-brand-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Holistic Growth</h4>
+                                <p class="text-slate-400 text-xs mt-1">Equal focus on academics, arts, values, and physical vitality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-400 font-semibold tracking-wider uppercase text-xs">Our Guiding Light</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Vision, Mission &amp; Core Values</h2>
+                <p class="text-slate-400 text-sm">The foundational pillars directing our academic practices and student development.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Vision Card -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/50 transition duration-300 group hover:-translate-y-1 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-brand-500/5 rounded-bl-full pointer-events-none group-hover:bg-brand-500/10 transition"></div>
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 border border-brand-500/30 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition transform">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="text-xs text-brand-400 font-semibold uppercase tracking-wider mb-1">हमारा दृष्टिकोण</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Our Vision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        To evolve into a benchmark center of academic excellence where students from all backgrounds achieve intellectual curiosity, digital fluency, and moral fortitude, evolving into proactive leaders for tomorrow's nation.
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-slate-800 hover:border-blue-500/50 transition duration-300 group hover:-translate-y-1 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-bl-full pointer-events-none group-hover:bg-blue-500/10 transition"></div>
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition transform">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="text-xs text-blue-400 font-semibold uppercase tracking-wider mb-1">हमारा लक्ष्य</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Our Mission</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        To deliver an inclusive, learner-centric educational ecosystem powered by modern infrastructure, qualified mentorship, ethical guidance, and real-world skills that empower each child to reach their highest potential.
+                    </p>
+                </div>
+
+                <!-- Core Values Card -->
+                <div class="p-8 rounded-2xl bg-cardBg border border-slate-800 hover:border-indigo-500/50 transition duration-300 group hover:-translate-y-1 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full pointer-events-none group-hover:bg-indigo-500/10 transition"></div>
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition transform">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <div class="text-xs text-indigo-400 font-semibold uppercase tracking-wider mb-1">मूल संस्कार</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Core Values</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Integrity (सत्यनिष्ठा), Discipline (अनुशासन), Empathy (सहानुभूति), and Perseverance (धैर्य). We believe character building is as paramount as scoring high marks in board examinations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-surfaceBg/40 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-900 via-cardBg to-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Portrait & Credentials -->
+                    <div class="lg:col-span-4 text-center lg:text-left">
+                        <div class="relative inline-block mx-auto lg:mx-0 mb-4">
+                            <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden border-2 border-brand-400/60 shadow-xl shadow-brand-500/10">
+                                <img src="image/ban 1.jpg" alt="Director & Principal Desk" class="w-full h-full object-cover">
+                            </div>
+                            <span class="absolute -bottom-2 -right-2 px-3 py-1 bg-brand-500 text-white text-[11px] font-bold rounded-lg shadow-md">
+                                Director
+                            </span>
+                        </div>
+                        <h4 class="text-white font-bold text-lg">Principal Desk</h4>
+                        <p class="text-brand-400 text-xs font-semibold">Indraprasth Public School</p>
+                        <p class="text-slate-400 text-xs mt-1">Behind LIC Office, Gohad Chauraha</p>
+                    </div>
+
+                    <!-- Message Block -->
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="text-brand-400 text-3xl opacity-80">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-white">
+                            "Education is not merely preparing for exams, it is awakening the infinite spirit of learning."
+                        </h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed italic">
+                            At Indraprasth Public School, our commitment is to provide an empowering, safe, and stimulating environment where each child feels seen, valued, and challenged. By fusing traditional values with high-speed digital education, we enable our students in Gohad to dream big and acquire the exact technical and intellectual competencies necessary to compete with peers anywhere in the world.
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            We welcome parents to visit our campus Behind the LIC Office at Gohad Chauraha and join our vibrant educational family.
+                        </p>
+
+                        <!-- Key Highlights -->
+                        <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-6 text-xs text-slate-300">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-400"></i> Individual Attention</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-400"></i> Transparent Parent Communication</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-400"></i> Zero Tolerance for Ragging</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-400 font-semibold tracking-wider uppercase text-xs">Why Indraprasth Public School</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">The Pillars of Institutional Excellence</h2>
+                <p class="text-slate-400 text-sm">Engineered to nurture academic mastery, moral responsibility, and digital acumen.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Pillar 1 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/40 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-2">Smart Interactive Classrooms</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Classrooms furnished with digital interactive boards and audio-visual modules that transform complex topics into memorable conceptual experiences.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/40 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-2">Hi-Tech IT &amp; Computer Lab</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Practical computational exposure starting from early primary grades, teaching coding fundamentals, web skills, and safe digital usage.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/40 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-2">Modern Science Laboratories</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Well-equipped Physics, Chemistry, and Biology laboratories where students perform practical experiments under expert teacher supervision.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/40 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-2">Sports &amp; Physical Fitness</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Regular outdoor activities including cricket, badminton, athletics, and yoga sessions designed to cultivate sportsmanship, stamina, and team spirit.
+                    </p>
+                </div>
+
+                <!-- Pillar 5 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/40 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-2">Safe &amp; Monitored Campus</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Complete CCTV coverage across all corridors, entry gates, and campus boundaries, complemented by safe, GPS-monitored student bus routes.
+                    </p>
+                </div>
+
+                <!-- Pillar 6 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-slate-800 hover:border-brand-500/40 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-2">Career Counseling &amp; Doubts Desk</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Targeted guidance sessions for high school students regarding career streams, competitive exams (Olympiads, JEE, NEET), and regular doubt resolution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-surfaceBg/20 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-400 font-semibold tracking-wider uppercase text-xs">Our Evolution</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Milestones in Our Journey</h2>
+                <p class="text-slate-400 text-sm">Stepping stones that cemented Indraprasth Public School as Gohad's premier institution.</p>
+            </div>
+
+            <!-- Vertical Timeline -->
+            <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-32 space-y-12">
+                
+                <!-- Milestone 1 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-brand-500 border-4 border-darkBg group-hover:scale-125 transition"></div>
+                    <div class="sm:absolute sm:-left-32 sm:top-0 text-brand-400 font-bold text-sm tracking-wider">FOUNDATION</div>
+                    <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl hover:border-slate-700 transition">
+                        <h4 class="text-white font-bold text-base mb-1">Establishment at Gohad Chauraha</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Indraprasth Public School commenced operations Behind the LIC Office at Gohad Chauraha with foundational classes, committed faculty, and an emphasis on values.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 border-4 border-darkBg group-hover:scale-125 transition"></div>
+                    <div class="sm:absolute sm:-left-32 sm:top-0 text-blue-400 font-bold text-sm tracking-wider">EXPANSION</div>
+                    <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl hover:border-slate-700 transition">
+                        <h4 class="text-white font-bold text-base mb-1">High-Tech Labs &amp; Sports Infrastructure</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Expanded infrastructure with dedicated computer laboratories, modernized science lab modules, and structured athletics training areas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-darkBg group-hover:scale-125 transition"></div>
+                    <div class="sm:absolute sm:-left-32 sm:top-0 text-emerald-400 font-bold text-sm tracking-wider">SMART ERA</div>
+                    <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl hover:border-slate-700 transition">
+                        <h4 class="text-white font-bold text-base mb-1">Digital Classrooms &amp; ERP Integration</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Equipped every classroom with smart digital boards and implemented a cloud-based school portal for automated attendance, fee receipts, and homework updates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-brand-400 border-4 border-darkBg group-hover:scale-125 transition"></div>
+                    <div class="sm:absolute sm:-left-32 sm:top-0 text-brand-400 font-bold text-sm tracking-wider">SESSION 2026-27</div>
+                    <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl hover:border-brand-500/40 transition">
+                        <h4 class="text-white font-bold text-base mb-1">Next-Gen Curriculum &amp; STEM Modules</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Rolling out specialized STEM learning, artificial intelligence awareness modules, and comprehensive competitive test series for senior secondary batches.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-400 font-semibold tracking-wider uppercase text-xs">Our Leaders &amp; Mentors</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Administration &amp; Faculty Leadership</h2>
+                <p class="text-slate-400 text-sm">Passionate educators driving excellence and student safety at Indraprasth Public School.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <!-- Member 1 -->
+                 <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl group hover:border-brand-500 transition duration-300">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-400/40 group-hover:scale-105 transition transform">
+                        <img src="image/ban 1.jpg" alt="Abhishek Singh" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-white font-bold text-sm">Bhagwant Singh Tomar </h4>
+                    <p class="text-brand-400 text-xs mt-1">Director  </p>
+                    <p class="text-[11px] text-slate-500 mt-1">Principal</p>
+                </div>
+                 <!-- Member 5 -->
+                <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl group hover:border-brand-500 transition duration-300">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-400/40 group-hover:scale-105 transition transform">
+                        <img src="image/sujeet.png" alt="Sujeet Dandotiya" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-white font-bold text-sm">Sujeet Dandotiya</h4>
+                    <p class="text-brand-400 text-xs mt-1">Computer &amp; IT Head</p>
+                    <p class="text-[11px] text-slate-500 mt-1">Digital Infrastructure</p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl group hover:border-brand-500 transition duration-300">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-400/40 group-hover:scale-105 transition transform">
+                        <img src="image/vivek.png" alt="Vikash Dandotiya" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-white font-bold text-sm">Vivek Singh Gurjar</h4>
+                    <p class="text-brand-400 text-xs mt-1">Exam Controller</p>
+                    <p class="text-[11px] text-slate-500 mt-1">D.ed &amp; </p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl group hover:border-brand-500 transition duration-300">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-400/40 group-hover:scale-105 transition transform">
+                        <img src="image/sohit 1.jpg" alt="Gaurav Kushwah" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-white font-bold text-sm">Sohit Baishander</h4>
+                    <p class="text-brand-400 text-xs mt-1">Teacher</p>
+                    <p class="text-[11px] text-slate-500 mt-1">BA</p>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="bg-cardBg border border-slate-800 p-5 rounded-2xl group hover:border-brand-500 transition duration-300">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-400/40 group-hover:scale-105 transition transform">
+                        <img src="image/rishi.png" alt="Satyam Purohit" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-white font-bold text-sm">Rishi </h4>
+                    <p class="text-brand-400 text-xs mt-1"> Teacher  &amp; </p>
+                    <p class="text-[11px] text-slate-500 mt-1">B.ed</p>
+                </div>
+
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="admission-cta" class="py-16 bg-gradient-to-r from-sky-950 via-slate-900 to-indigo-950 border-y border-slate-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-semibold uppercase">
+                <i class="fa-solid fa-door-open text-brand-400"></i> Plan Your Campus Visit
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                Experience the Difference at <br class="hidden sm:inline">
+                <span class="text-brand-400">Indraprasth Public School</span>
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Visit our campus located conveniently Behind LIC Office, Gohad Chauraha. Meet our faculty, explore our smart classrooms, and secure your child's admission for the upcoming academic session.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                <a href="index.html#admission" class="bg-brand-500 hover:bg-brand-400 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg shadow-brand-500/30 transition transform hover:-translate-y-0.5">
+                    Apply for Admission 2026-27
+                </a>
+                <a href="tel:+919926754849" class="border border-slate-700 hover:border-brand-400 bg-slate-900/60 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition">
+                    <i class="fa-solid fa-phone mr-2 text-brand-400"></i> Schedule a Visit (+91 9926754849)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black border-t border-slate-800 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-500 to-blue-700 flex items-center justify-center text-white text-xl font-bold">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="text-lg font-black tracking-wider text-white">INDRAPRASTH <span class="text-brand-400">PUBLIC SCHOOL</span></div>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Nurturing intellect, sportsmanship, and computational proficiency. Located Behind LIC Office, Gohad Chauraha, dedicated to creating future leaders.
+                    </p>
+                    <div class="flex space-x-3 text-slate-300">
+                        <a href="#" aria-label="Facebook page" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-brand-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram page" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-brand-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube channel" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-brand-400 transition"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-brand-400 transition">Home Page</a></li>
+                        <li><a href="about.html" class="hover:text-brand-400 transition text-brand-400">About Our Institution</a></li>
+                        <li><a href="academics.html" class="hover:text-brand-400 transition">Academic Wings &amp; Classes</a></li>
+                        <li><a href="index.html#facilities" class="hover:text-brand-400 transition">Campus Facilities &amp; Labs</a></li>
+                        <li><a href="index.html#faculty" class="hover:text-brand-400 transition">Faculty &amp; Administration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Student & Parent Resources -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-4">Student &amp; Parents</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html#admission" class="hover:text-brand-400 transition">Online Admission Portal</a></li>
+                        <li><a href="#" class="hover:text-brand-400 transition">Fee Schedule &amp; Online Payment</a></li>
+                        <li><a href="#" class="hover:text-brand-400 transition">Academic Calendar 2026-27</a></li>
+                        <li><a href="#" class="hover:text-brand-400 transition">Examination Guidelines &amp; Syllabus</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Address & Contact Details -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-4">Campus Address</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-brand-400 mt-1"></i>
+                            <span>Behind LIC Office, Gohad Chauraha, Gohad (M.P.)</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-brand-400"></i>
+                            <span>+91 9926754849</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-brand-400"></i>
+                            <span>indraprasthschool1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Indraprasth Public School. All Rights Reserved.</p>
+                <div>
+                    <span>Technology Partner: <span class="text-brand-400 font-medium">SD SOFTECH</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/916261745836?text=Hello%20Indraprasth%20Public%20School,%20I%20would%20like%20to%20inquire%20about%20admissions%20at%20your%20Gohad%20Chauraha%20campus." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/30 transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if (mobileMenu.classList.contains('hidden')) {
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark');
+                }
+            });
+
+            // Auto-close dropdown when a menu link is tapped
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
